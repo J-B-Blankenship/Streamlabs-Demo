@@ -15,3 +15,9 @@ Commits were done directly to ```master```. This is not typical in my workflow, 
 ## Packaging of the Application
 
 The project installed the dependencies necessary for Electron Forge. GitHub actions could be set up to ensure ```npx electron-forge import``` is run every time. I built it with ```npm run package``` that produced an ```out``` folder. There were files that were too large, but this is available and works. The tutorial wanted to do ```npm run make```, but this had missing dependencies and vulenerabilities for ```rpmbuild```. Given the alternative works (I think), I went with it instead.
+
+## Dependency Management
+
+Normally, I would utilize Bazel's git repository feature to specify a version or latest. CMake has the same capabilities, but previous experience at a previous job was that it was a hassle. Depending on system permissions, this may not be a valid option if you were to use it.
+
+Due to these reasons, I remembered git has submodules. While I have not used submodules in that past, this seemed fairly straightforward and a good way to keep the dependency together. It also allows the CMakelist component to be more straightforward with third-party libraries within the same repository. To boot, everything is one place, visibile to users of the repository, and removes system privilege concerns. 
