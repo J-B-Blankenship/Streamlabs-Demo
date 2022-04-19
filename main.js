@@ -1,6 +1,10 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
+var addon = require('bindings')('hello');
+
+console.log(addon.hello());
+
 function createWindow () {
     const win = new BrowserWindow({
         width: 1000,

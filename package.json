@@ -18,8 +18,9 @@
     "electron": "^18.0.4"
   },
   "dependencies": {
+    "bindings": "^1.5.0",
     "electron-squirrel-startup": "^1.0.0",
-    "rpmbuild": "^0.0.23"
+    "node-addon-api": "^4.3.0"
   },
   "config": {
     "forge": {
@@ -47,5 +48,6 @@
         }
       ]
     }
-  }
+  },
+  "gypfile": true
 }
