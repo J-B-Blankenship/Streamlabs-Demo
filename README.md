@@ -6,7 +6,7 @@ This is the coding assignment provided to assess a candidate's knowledge and tec
 
 I know the purpose of this was probably to assess the ability to quickly adapt to third-party libraries, setups, and what not, but I am hijacking your assessment. Commits may span over a day or two because I am taking breaks and reading more into the different components. I want to kill two birds with one stone rather than blazing through the stuff without understanding any of it. This stuff looks exactly like what I may need for a private repository I have, particularly the C++ addons/extensions. 
 
-I hope you do not mind. The rest of the README will list different pieces I either attempted, partially completed, or completed fully. There are some issues with OpenGL on my machine, so I skipped the "bonus" content. 
+The rest of the README will list different pieces I either attempted, partially completed, or completed fully. There are some issues with OpenGL on my machine, so I skipped the "bonus" content. I attempted the object wrapper until an obscure compile time error.
 
 The initial stuff took about an hour and a half. As for the rest, I spent a handful of hours exploring the capabilities of the different libraries and documentation.  
 
