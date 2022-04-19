@@ -18,6 +18,6 @@ The project installed the dependencies necessary for Electron Forge. GitHub acti
 
 ## Dependency Management
 
-Normally, I would utilize Bazel's git repository feature to specify a version or latest. CMake has the same capabilities, but previous experience at a previous job was that it was a hassle. Depending on system permissions, this may not be a valid option if you were to use it.
+Normally, I would utilize Bazel's git repository feature to specify a particular version or latest. CMake has the same capabilities, but previous experience at a previous job was that it was a hassle. Depending on system permissions, this may not be a valid option if you were to use it.
 
-Due to these reasons, I remembered git has submodules. While I have not used submodules in that past, this seemed fairly straightforward and a good way to keep the dependency together. It also allows the CMakelist component to be more straightforward with third-party libraries within the same repository. To boot, everything is one place, visibile to users of the repository, and removes system privilege concerns. 
+Due to these reasons, I remembered git has submodules. While I have not used submodules in the past, this seemed fairly straightforward and a good way to keep the dependency(ies) together. It also allows the CMakelist component to be more straightforward with third-party libraries within the same repository. To boot, everything is one place, visibile to users of the repository, and removes system privilege concerns. 
